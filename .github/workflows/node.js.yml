@@ -34,7 +34,7 @@ jobs:
       run: yarn build
       
     - name: Run migrations
-      run: yarn ./node_modules/.bin/typeorm migration:run
+      run: yarn typeorm migration:run
       
     - name: Start Application
       run: yarn start
