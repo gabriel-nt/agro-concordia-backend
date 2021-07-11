@@ -38,18 +38,18 @@ onde não havia um controle dos estoques do produtos vendidos.
 - [x] Upload de imagens
 - [x] Deleção de produtos
 
-### Marcas
+#### Marcas
 - [x] Criação de Marcas
 - [x] Upload de imagens (logo e banner)
 - [x] Atualização de registro
 - [x] Deleção de registro
 
-### Vendas
+#### Vendas
 - [x] Criação de Vendas
 - [x] Atualização da transação
 - [x] Remoção do registro
 
-### Compras
+#### Compras
 - [x] Criação de Vendas
 - [x] Atualização da transação
 - [x] Remoção do registro
