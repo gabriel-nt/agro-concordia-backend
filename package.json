@@ -7,7 +7,8 @@
     "start": "node src/shared/infra/http/server.ts",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
     "dev": "tsnd -r tsconfig-paths/register --transpile-only --inspect --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "typeorm": "tsnd -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+    "typeorm:dev": "tsnd -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "typeorm:prod": "./node_modules/.bin/typeorm migration:run"
   },
   "keywords": [],
   "author": "gabriel",
