@@ -31,6 +31,8 @@ class UpdateSaleService {
       throw new AppError(`Puchase with id ${id} not found`);
     }
 
+    const oldQuantity = sale.quantity;
+
     Object.assign(sale, {
       price,
       quantity,
@@ -46,7 +48,6 @@ class UpdateSaleService {
 
     if (productStock) {
       const { stock } = productStock;
-      const oldQuantity = sale.quantity;
 
       await this.productsRepository.updateStock({
         id: stock.id,

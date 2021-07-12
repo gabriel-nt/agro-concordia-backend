@@ -32,6 +32,8 @@ class UpdatePurchaseService {
       throw new AppError(`Puchase with id ${id} not found`);
     }
 
+    const oldQuantity = purchase.quantity;
+
     Object.assign(purchase, {
       price,
       quantity,
@@ -47,7 +49,10 @@ class UpdatePurchaseService {
 
     if (productStock) {
       const { stock } = productStock;
-      const oldQuantity = purchase.quantity;
+
+      console.log(stock);
+      console.log(oldQuantity);
+      console.log(quantity);
 
       await this.productsRepository.updateStock({
         id: stock.id,
